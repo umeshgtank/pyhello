@@ -1,0 +1,24 @@
+specVersion: 0.34.0
+name: pyhello
+runtime: python
+registry: docker.io/umeshtank
+image: docker.io/umeshtank/pyhello:latest
+imageDigest: ""
+created: 2022-12-07T01:04:32.690555+05:30
+invocation:
+  format: http
+build:
+  buildpacks: []
+  builder: pack
+  buildEnvs: []
+run:
+  volumes: []
+  envs: []
+deploy:
+  namespace: ""
+  annotations: {}
+  options: {}
+  labels: []
+  healthEndpoints:
+    liveness: /health/liveness
+    readiness: /health/readiness
